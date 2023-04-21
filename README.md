@@ -37,7 +37,6 @@ clang++ -o main-cc.wasm main.cc
 wasmtime main-cc.wasm
 # this works
 wasmtime --dir . main-cc.wasm
-
 ```
 
 ## Web serving with WAGI
