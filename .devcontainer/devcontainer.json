@@ -1,0 +1,17 @@
+{
+    "name": "C/C++ WASM",
+    "image": "ubuntu:jammy",
+    "remoteEnv": {
+	"PATH": "${containerEnv:PATH}:/usr/local/lib/wasi-sdk-20.0/bin"
+    },
+    "features": {
+        "devwasm.azurecr.io/dev-wasm/dev-wasm-feature/wasmtime-wasi:0.0.7": {
+            "version": "17"
+        }
+    },
+    "customizations": {
+        "vscode": {
+	    "extensions": [ "ms-vscode.cpptools-extension-pack" ]
+	}
+    }
+}
